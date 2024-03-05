@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>belajar react</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const container = document.getElementById("root");
+      // digunakan untuk mencarikan elemen yang idnya root
+      const root = ReactDOM.createRoot(container);
+      // root.render(
+      //   <>
+      //     <h1 className="heading">belajar react</h1>
+      //     <img src="img\dicoba.jpeg" width="80" alt="fotoku" />
+      //     <p
+      //       onClick={(e) => {alert("ok");}}
+      //     >
+      //       belajar react untuk pertama kalinya
+      //     </p>
+      //   </>
+      // );
+      return <h1 className="heading">belajar react</h1>;
+      root.render(<Header />);
+    </script>
+  </body>
+</html>
